@@ -1,6 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { configure } from '@testing-library/react'
+import dataReducer from './freatures/dataSlice'
 
 export const store = configureStore ({
-    reducer: {}
+    reducer: {
+        data: dataReducer
+    }
 })

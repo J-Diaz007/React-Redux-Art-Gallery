@@ -19,3 +19,7 @@ export const dataSlice = createSlice({
     }
 
 })
+
+export const { setData, incrementId, decrementId, customId, clearData } = dataSlice.actions
+
+export default dataSlice.reducer
